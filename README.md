@@ -1,16 +1,41 @@
-## WordPress Plugin - Guitar Manager ##
+# 🎸 WordPress Plugin - Guitar Manager
 
-### Features: ###
+**Guitar Manager** is a WordPress plugin designed to streamline the management of guitar inventories in an online store. It provides a custom admin interface, meta boxes for detailed guitar information, and shortcodes to display guitar data on the front-end. Whether you manage a music shop or an online inventory, this plugin simplifies the process.
 
-- Adds a custom admin menu for managing guitars
-- Provides shortcodes for displaying guitar information
-- Includes a meta box for additional guitar details
-- Stores at least one additional piece of information about each page
-- Displays content based on shortcode parameters (e.g., list, table)
-- Handles additional data management from the custom admin menu
-- Creates and removes a database table on plugin activation and deactivation
-- Manages at least three different data fields (e.g., name, quantity, weight) from the admin menu
-- Meta box includes at least three different types of input fields: radio, text, and number
+---
 
-### Description: ###
-Guitar Manager is designed to streamline the management of guitar inventories in an online store. The plugin features a custom admin menu, meta boxes for detailed information, and versatile shortcodes for displaying guitar data. It ensures efficient data handling and integrates seamlessly with the WordPress admin panel, making it an essential tool for any music-related e-commerce site.
+## 🌟 Features
+
+- **Custom Admin Menu**: Manage guitar details directly from the WordPress admin dashboard.
+- **Meta Boxes**: Add additional information about guitars (e.g., name, weight, and quantity).
+- **Shortcodes**: Display guitar data dynamically on pages or posts using `[guitar_manager]`.
+- **Custom Fields**:
+  - Text fields (e.g., guitar name).
+  - Number fields (e.g., weight, quantity).
+  - Radio buttons (e.g., availability status).
+- **Database Management**:
+  - Creates custom tables on activation.
+  - Cleans up database tables on deactivation.
+- **Dynamic Display**: Supports different views such as list or table via shortcode parameters.
+
+---
+
+## 🛠️ Installation
+
+1. Download the `guitar-manager.php` file.
+2. Upload the file to the `/wp-content/plugins/` directory on your WordPress installation.
+3. Go to the WordPress **Plugins** page and activate the plugin.
+
+---
+
+## 🚀 Usage
+
+### Admin Panel
+- Navigate to the **Guitar Manager** menu in the WordPress admin dashboard.
+- Add, edit, or delete guitars and their details.
+
+### Shortcodes
+Use the `[guitar_manager]` shortcode to display the guitar list on any page or post. Example:
+
+```html
+[guitar_manager type="table"]
